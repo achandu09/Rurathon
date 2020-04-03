@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UPLOAD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script>
+        var firebaseConfig = {
+        apiKey: "AIzaSyBplfXGsuGYm9HkoyngrrVshytJJal89h4",
+        authDomain: "register-3f8a6.firebaseapp.com",
+        databaseURL: "https://register-3f8a6.firebaseio.com",
+        projectId: "register-3f8a6",
+        storageBucket: "register-3f8a6.appspot.com",
+        messagingSenderId: "201237572223",
+        appId: "1:201237572223:web:a71caf5a4660cb3ebd2d4a",
+        measurementId: "G-R6BTFRRVPM"
+        };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);             
+    </script>
+    <script src="upload.js"></script>
+</head>
+<body>
+        <div class="header" style="background-color: rgb(92, 184,92)">
+                <h1 align="center">eFarming</h1>
+                <h3 align="center">SELL PRODUCT</h3>
+            </div>
+            <div class="m-5 jumbotron">
+                
+                    <legend class="m-4">ENTER PRODUCT DATA</legend>
+                    <hr>
+                        <div class="form-group w-50 p-3 m-2 ">
+                          <input type="text" class="form-control" id="cname" aria-describedby="emailHelp" placeholder="crop name">
+                        </div>
+                        <div class="form-group w-50 p-3 m-2">
+                          <input type="text" class="form-control" id="quantity" placeholder="quantity">
+                        </div>
+                        <div class="form-group w-50 p-3 m-2">
+                            <input type="text" class="form-control" id="price"  placeholder="price">
+                        </div>
+                        <div class="form-group w-50 p-3 m-2">
+                            <input type="text" class="form-control" id="category" placeholder="category">
+                        </div>
+                        <button type="button" class="btn btn-success m-4" onclick="upload()">upload</button>
+               
+            </div>
+</body>
+</html>

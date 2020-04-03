@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <a class="navbar-brand" href="#"><h3>eFarming</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+              
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html"><h6>HOME</h6><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services"><h6>SERVICES</h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html"><h6>PROFILE</h6></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#team"><h6>OUR TEAM</h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html"><h6>STORE</h6></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#aboutus"><h6>ABOUT US</h6></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#contact"><h6>CONTACT</h6></a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-light my-2 my-sm-0 sticky-top" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions data-toggle" class="carousel slide" data-ride="carousel" data-interval="2200">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions"  data-slide-to="0"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active"><a href="info.html#irrigation">
+                <img src="i.png" width="400px" height="450px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 style="color: black">New Farming Techniques</h2>
+                  <h4 style="color: black">Learn the newest farming techniques to increase your profits.</h4>
+                </div></a>
+              </div>
+              <div class="carousel-item"><a href="info.html#cropselection">
+                <img src="g.jpg" width="400px" height="450px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 style="color: black">Crops for you</h2>
+                  <h4 style="color: black">Learn the app</h4>
+                </div></a>
+              </div>
+              <div class="carousel-item"><a href="info.html#cropgrowth">
+                <img src="j.jpg" width="400px" height="450px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Genesis</h2>
+                  <h4>Learn the steps involved in farming</h4>
+                </div>
+                </a>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+    </div>
+    <div class="jumbotron" style="background-color: rgb(92,184,92)" id="aboutus">
+            <h1 class="display-4" style="text-align: center">About Us</h1>
+            <hr class="my-4">
+            <p> We have developed a web application with basic necessities which a
+                 farmer can use.The app consists of farming tips such as advising proper crops to be planted 
+                 according to their field types , proper irrigation and cultivation methods , suitable fertiliser 
+                 to be used for farming. A farmer can act as both user and admin in the app. In the user mode , a 
+                 farmer can buy fertilisers from local stores , can learn new farming techniques and strategies, and
+                 could know all the information regarding the crops which are planted and current market prices as
+                 well.As there is very bad agricultural marketing going on , In admin mode , a farmer can directly
+                 update his availability of product in app along with prices , which can be bought directly by the
+                 users ( Transportation has to be managed by the farmer in bulk ) or by the intermediate market
+                 retailers and sell them in the market.  This would help in gaining maximum profit for the farmers 
+                 as the crop is sold by himself and the product could be sold with least price in the market as there 
+                 are no more than 2 intermediate retailers which would reduce intermediate retailers who gain maximum 
+                 profit before the product could reach the market. The app would also consists of an algorithm which 
+                 allows the farmer to calculate optimal price for the product according to the investment in crops and
+                 fertilisers , time taken for cultivation and labour for optimal profits. The app comes along with the
+                 pictures which help the farmers who aren’t well educated to understand the use of the application.
+                 It would support most of the regional languages so that in can be used around the country. 
+                 The learning can be done through reading (with picturization ) and also through videos which
+                 would increase the understanding. The main intention  of this app is to keep updating the farmer
+                 with various techniques & technology and not to depend farmers on local traders and lose profit.</p>
+            <hr class="my-4">
+            <p>To learn more about how we work , click below.</p>
+            <a class="btn btn-light btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    
+    <div id=services>
+        <p class="display-4" style="text-align: center">Services</p></br>
+        <h6 class="float-left"><a style="margin-left: 150px;" href="info.html">Farming</a></h6>
+        <h6 class="float-left"><a style="margin-left: 150px;" href="upload.html">Store</a></h6>
+        <h6 class="float-left"><a style="margin-left: 150px;" href="temp.html">Buy Products</a></h6>
+        <h6 class="float-left"><a style="margin-left: 150px;" href="#">Generate Price</a></h6>
+        <h6 class="float-left"><a style="margin-left: 150px;" href="upload.html">add to market</a></h6></br></br></br>
+    </div>
+    <div id="team" style="background-color: rgb(156, 156, 156)!important">
+            <p class="display-4" style="text-align:center">Our Team</p></br>
+            <div class="card float-left p-2 m-1" style="width: 18rem; margin-left:80px!important">
+                <img src="d.png" width="150px" height="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">A Chandu</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Follow</a>
+                </div>
+            </div>
+            <div class="card float-left p-2 m-1" style="width: 18rem;">
+                <img src="d.png" width="150px" height="200px"  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aditya Kuna</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Follow</a>
+                </div>
+            </div>
+            <div class="card float-left p-2 m-1" style="width: 18rem;">
+                <img src="d.png" width="150px" height="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Anil Kumar</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Follow</a>
+                </div>
+            </div>
+            <div class="card float-left p-2 m-1" style="width: 18rem;">
+                <img src="d.png" width="150px" height="200px"  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Devaraj</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Follow</a>
+                </div>
+            </div>
+        </div>
+    <div class="jumbotron jumbotron-fluid" style="background-color: rgb(156, 156, 156)!important" id="contact">
+        <div class="container text-center">
+           <h1 class="display-4">Contact Us</h1>
+           <p class="lead"><h5 class="display-5">For more support or any queries
+               Email us on <a href="#">efarming2020@gmail.com</a>
+           </h5>
+           <h2 class="display-5">Hyderabad , India</h2>
+           <h5 class="display-5">
+                CVR COllege Of Enineering ,
+                Managalpally,
+                ibrahimpatnam,
+                Hyderabad.
+           </h5>
+           </p>
+        </div>
+    </div>
+</body>
+</html>

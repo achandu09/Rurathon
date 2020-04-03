@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+<script>
+var firebaseConfig = {
+    apiKey: "AIzaSyBplfXGsuGYm9HkoyngrrVshytJJal89h4",
+    authDomain: "register-3f8a6.firebaseapp.com",
+    databaseURL: "https://register-3f8a6.firebaseio.com",
+    projectId: "register-3f8a6",
+    storageBucket: "register-3f8a6.appspot.com",
+    messagingSenderId: "201237572223",
+    appId: "1:201237572223:web:a71caf5a4660cb3ebd2d4a",
+    measurementId: "G-R6BTFRRVPM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ 
+  </script>
+<script src="register.js"></script>
+</head>
+<body style="background-color: rgb(249,249,249)">
+    <div class="header" style="background-color:rgb(92,184,92);">
+        <h1 style="text-align:center">eFarming</h1>
+        <h3 style="text-align:center">Register Now!</h3>
+    </div>
+    <div class="align-items-center m-5">
+        
+            
+                <legend class="m-3">Register</legend>
+                <div class="row w-50 p-2">
+                    <div class="col">
+                      <input type="text" id="first" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" id="last" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="row w-50 p-4">
+                    <input type="email" id="mail" class="form-control"placeholder="Email Id">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="row w-50 p-2 m-1">
+                    <input type="date" id="dob" class="form-control" placeholder="Date Of Birth">
+                </div>
+                <div class="row w-50 p-4">
+                    <input type="text" id="number" class="form-control" placeholder="Mobile Number">
+                </div>
+                <div class="input-group p-2 w-50 mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" id="uname" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="row w-50 p-4">
+                        <input type="password" id="pass" class="form-control" placeholder="password">
+                    </div>
+                <div class="row p-4">
+                <input type="submit" onclick="register()" class="btn btn-success" value="Submit">
+                </div>
+                <p align="center">Already have account?<a href="login.html" style="color: green">Login Here!</a></p>
+            
+    </div>
+</body>
+</html>
